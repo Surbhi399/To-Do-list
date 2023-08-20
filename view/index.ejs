@@ -1,0 +1,45 @@
+<%- include("C:/Users/jains/OneDrive/Desktop/MY TODO LIST/to-do list/view/partials/header.ejs") %>
+    <div class="container">
+        <!-- Content here -->
+
+        <nav class="navbar navbar-light " style="background-color:  #6554AF;">
+            <div class="container-fluid">
+                <a class="navbar-brand">📒To-Do</a>
+                <form class="d-flex">
+                    <ul class="nav justify-content-end" >
+                        <li class="nav-item" style="background-color: #6554AF; transform: scale(1.1); ">
+                            <a class="nav-link active" aria-current="page" href="/today"  style="color: #000; ">📅Today</a>
+                        </li>
+                        <li class="nav-item" style="background-color: #6554AF; transform: scale(1.1);">
+                            <a class="nav-link"   href="/work" style="color: #000;  ">📋Work</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </nav>
+        <div style="display: contents; align-items: center; justify-content: center;">
+
+        <div id="date" >
+          
+            </div>
+          </div>
+    </div >
+    <div class="list-wrapper">
+    <div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ol id="myUL">
+  <li>Morning walk</li>
+  <li class="checked">Exercise</li>
+  <li>Buying morning milk</li>
+  <li>Revision of Java and selenium</li>
+  <li>Doing To-Do project</li>
+  <li>Cooking food</li>
+  <li>going for job</li>
+  <li>Atending class of API testing</li>
+</ol>
+</div>
+    <%- include("partials/footer.ejs") %>
